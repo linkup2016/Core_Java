@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int i = 0;
+		int sv = 0;
+		
+		Scanner input = new Scanner(System.in);
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		while (sv != -1) {
+			Student student = new Student();
+			System.out.println("Student ID: ");			
+			student.setStudentId(input.nextInt()); 
+			System.out.println("Name: ");
+			student.setName(input.nextLine());
+			studentList.add(student);
+		}
+
+	}
+
+}

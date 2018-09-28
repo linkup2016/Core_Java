@@ -1,0 +1,51 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args){
+		String name;
+		int sv = 0;
+		try {
+			Scanner input = new Scanner(System.in);
+			ArrayList<Student> studentList = new ArrayList<Student>();
+			
+			while (sv != -1) {
+				Student student = new Student();
+				System.out.println("Student ID: ");
+				sv = input.nextInt();
+				student.setStudentId(sv);
+				System.out.println("Name: ");
+				name = input.nextLine();
+				student.setName(name);
+				studentList.add(student);				
+			}
+		} catch (Exception e) {
+			e.getMessage();
+		} 
+		
+		
+
+	}
+
+	public static void writeStudentList(ArrayList<Student> list) throws IOException {
+		File file = new File("students.txt");
+		if (file.exists()) {
+			System.out.println("File already exists");
+			System.exit(1);
+		}
+		try (PrintWriter writer = new PrintWriter(file)) {
+			for (Student i : list) {
+				writer.println(i.getName());
+				writer.print(i.getStudentId());
+			}
+			writer.close();
+		}
+
+	}
+
+}

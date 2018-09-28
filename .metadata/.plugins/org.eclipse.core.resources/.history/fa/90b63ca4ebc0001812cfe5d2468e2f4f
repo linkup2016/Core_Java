@@ -1,0 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		Map<String, Integer> age = new HashMap();
+		age.put("Mark", 31);
+		age.put("Moges", 37);
+		age.put("Stevens", 23);
+		
+		
+		System.out.println(age.keySet());
+
+	}
+
+}

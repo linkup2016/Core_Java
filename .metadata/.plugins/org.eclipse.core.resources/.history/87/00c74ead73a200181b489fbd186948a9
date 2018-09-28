@@ -1,0 +1,10 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee emp = new Employee();
+		emp.setAge(25);
+		emp.setAge(25);
+	}
+
+}

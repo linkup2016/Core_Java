@@ -1,0 +1,59 @@
+import java.sql.Date;
+
+public class Account {
+	int id;
+	double balance;
+	double annualInterestRate;
+	double monthlyInterstRate;
+	Date dateCreated;
+	
+
+	public Account() {
+
+	}
+
+	public Account(int id, double balance) {
+		this.id = id;
+		this.balance = balance;
+	}
+
+	public int getId() {
+		return this.id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	public double getBalance() {
+		return this.balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public double getAnnualInterestRate() {
+		return annualInterestRate;
+	}
+
+	public void setAnnualInterestRate(double annualInterestRate) {
+		this.annualInterestRate = annualInterestRate;
+	}
+	public Date getDateCreated() {
+		return this.dateCreated;
+	}
+	public double getMonthlyInterestRate() {
+		this.monthlyInterstRate = annualInterestRate/12;
+		return monthlyInterstRate;
+	}
+	public double getMonthlyInterest() {
+		return balance * monthlyInterstRate;	
+	}
+	public double withdraw(double withdrawAmt) {
+		balance = balance - withdrawAmt;
+		return balance;
+	}
+	public double deposit(double depositAmt) {
+		balance = balance + depositAmt;
+		return balance;
+	}
+}

@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+		names.add("Gola");
+		names.add("Bola");
+		names.add("Dola");
+		
+		System.out.println(names);
+		
+		LinkedList<Integer> names2 = new LinkedList<>();
+		names2.add(14);
+		names2.add(9);
+		names2.add(34);				
+		
+		System.out.println(names2);
+		
+		HashSet<Double> prices = new HashSet<>();
+		prices.add(45.99);
+		prices.add(22.45);
+		prices.add(100.23);
+		
+		System.out.println(prices);
+		
+		TreeSet<Double> prices3 = new TreeSet<>();
+		prices.add(45.99);
+		prices.add(22.45);
+		prices.add(100.23);
+		
+		System.out.println(prices3);
+		
+		LinkedHashSet<Double> prices2 = new LinkedHashSet<>();
+		prices2.add(45.99);
+		prices2.add(22.45);
+		prices2.add(100.23);
+		
+		System.out.println(prices2);
+
+	}
+
+}

@@ -1,0 +1,73 @@
+
+public class Coffee implements Priceable {
+	private boolean isDecafe;
+	private int sugar, creame;
+	private char size;
+	private int quantity;
+	private final double MEDIUM_MARKUP = 1.20;
+	private final double LARGE_MARKUP = 1.40;
+
+	public Coffee(boolean isDecafe, int sugar, int creame, char size, int quantity) {
+		this.isDecafe = isDecafe;
+		this.sugar = sugar;
+		this.creame = creame;
+		this.size = size;
+		this.quantity = quantity;
+	}
+
+	public boolean isDecafe() {
+		return isDecafe;
+	}
+
+	public void setDecafe(boolean isDecafe) {
+		this.isDecafe = isDecafe;
+	}
+
+	public int getSugar() {
+		return sugar;
+	}
+
+	public void setSugar(int sugar) {
+		this.sugar = sugar;
+	}
+
+	public int getCreame() {
+		return creame;
+	}
+
+	public void setCreame(int creame) {
+		this.creame = creame;
+	}
+
+	public char getSize() {
+		return size;
+	}
+
+	public void setSize(char size) {
+		this.size = size;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	@Override
+	public double calculatePrice() {
+		double total;
+		if (size == 'M') {
+			total = Priceable.SMALL_COFFEE * MEDIUM_MARKUP * Priceable.SALES_TAX * size;
+			return total;
+		} else if (size == 'L') {
+			total = ((Priceable.SMALL_COFFEE * LARGE_MARKUP) * Priceable.SALES_TAX) * size;
+			return total;
+		} else {
+			 total = ((Priceable.SMALL_COFFEE * Priceable.SALES_TAX)) * size;
+			 return total;
+		}
+	}
+
+}

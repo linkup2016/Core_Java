@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		
+		int stop = 0;
+		Scanner input = new Scanner(System.in);
+		LinkedList<Integer> nums = new LinkedList<>();
+		
+		System.out.println("Please insert a number ");
+		while(stop!= 0) {
+			nums.add(input.nextInt());
+			System.out.println("Insert the next number ");
+		}
+
+	}
+
+}

@@ -1,0 +1,4 @@
+
+public interface Printable {
+	private void printName();
+}

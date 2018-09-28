@@ -1,0 +1,10 @@
+
+public class Accountant extends Employee {
+
+	@Override
+	public void print() {
+		System.out.println("Yonas Milo");
+
+	}
+
+}

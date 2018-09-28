@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+		names.add("Gola");
+		names.add("Bola");
+		names.add("Dola");
+		
+		System.out.print(names);
+		
+		LinkedList<Integer> names2 = new LinkedList<>();
+		names2.add(14);
+		names2.add(9);
+		names2.add(34);				
+		
+		System.out.print(names2);
+		
+		
+
+	}
+
+}

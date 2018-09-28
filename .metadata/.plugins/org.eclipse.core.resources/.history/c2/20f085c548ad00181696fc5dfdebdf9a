@@ -1,0 +1,17 @@
+import java.sql.Date;
+
+public class Account {
+	int id;
+	double balance;
+	double annualInterestRate;
+	Date dateCreated;
+	
+	public Account(){
+		
+	}
+	public Account(int id, double balance ) {
+		this.id = id;
+		this.balance = balance;
+	}
+
+}

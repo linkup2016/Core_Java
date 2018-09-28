@@ -1,0 +1,12 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		Coffee coffee1 = new Coffee(false, 4, 5, 'm', 3);
+		System.out.println("salary " + acnt.printSalary(125000));*/
+	}
+	
+
+}

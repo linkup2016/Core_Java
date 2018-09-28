@@ -1,0 +1,8 @@
+
+public class TextNotFoundException extends Exception {
+	private String message = "Text Entered is not valid";
+	
+	public TextNotFoundException() {
+		super(message);
+	}
+}

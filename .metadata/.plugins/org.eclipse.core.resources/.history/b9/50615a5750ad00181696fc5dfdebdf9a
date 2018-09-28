@@ -1,0 +1,83 @@
+import java.sql.Date;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String make, model;
+		Vehicle car1 = new Vehicle();
+		car1.setMake("BMW");
+		car1.setModel("X3");
+		make = car1.getMake();
+		model = car1.getModel();
+		
+		System.out.println("Your car is a "+make+ " "+ model);
+		
+		double BeginingBalance = 20000; 
+		int id = 1122; 
+		double deposit = 3000;
+		double withdrawal = 2500;
+		double interestRate = 0.24;
+		double currentBalance;
+		Date transactionDate;
+		
+		
+		Account acct = new Account(id,balance);
+		acct.setAnnualInterestRate(interestRate);
+		acct.deposit(3000);
+		acct.withdraw(2500);
+		
+		
+		id = acct.getId();
+		currentBalance = acct.getBalance();
+		transactionDate = acct.getDateCreated();
+		
+		System.out.println("**** Balance Report *****");
+		System.out.println("");
+		System.out.println("Customer Id "+ id);
+		System.out.println("Transaction Date "+ transactionDate);
+		System.out.println("Begining Balance " + BeginingBalance);
+		System.out.println("Withdrawal " + withdrawal);
+		System.out.println("Deposit "+ deposit);
+		System.out.println("Current Balance is: " + currentBalance);
+		
+		/*int[] numbers = { 0, 1, 2, 3, 4, 5 };
+		int[] num2;
+
+		num2 = numbers.clone();
+		System.out.println(numbers.length);
+
+		for (int n : numbers) {
+			System.out.println(numbers[n]);
+		}
+
+		System.out.println(num2[1]);*/
+
+		/*
+		 * for (int i = 0; i<4; i++) { System.out.println("ipad!"); for(int j= 0; j<2;
+		 * j++) { System.out.println("jpad!"); } }
+		 */
+
+		/*
+		 * switch(language) { case "amharic":
+		 * System.out.println("Enkuwan Dehna Metu !"); break; case "english":
+		 * System.out.println("Welcome! "); break; case "oromifa":
+		 * System.out.println("Began negan dufteni");break; default:
+		 * System.out.println("Sorry, We do support your language at this time"); }
+		 * ipad, jpad, jpad, ipad, jpad, jpad,
+		 */
+
+	}
+
+	public static int calculateAge(int baseYear) {
+		int currentYear = 2018;
+
+		return currentYear - baseYear;
+	}
+
+	public static int calculateAge(int baseYear, int currentYear) {
+		return currentYear - baseYear;
+	}
+
+}

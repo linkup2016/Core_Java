@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	
+		int [] numbers = {1,2,3,4,5};
+		
+		System.out.println(numbers[2]);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*for (int i = 0; i<4; i++) {
+			System.out.println("ipad!");
+			for(int j= 0; j<2; j++) {
+				System.out.println("jpad!");
+			}
+		}*/		
+
+		/*
+		 * switch(language) { case "amharic":
+		 * System.out.println("Enkuwan Dehna Metu !"); break; case "english":
+		 * System.out.println("Welcome! "); break; case "oromifa":
+		 * System.out.println("Began negan dufteni");break; default:
+		 * System.out.println("Sorry, We do support your language at this time"); }
+		 * ipad, jpad, jpad, 
+		 * ipad, jpad, jpad, 
+		 */
+
+	}
+	
+	public static int calculateAge(int baseYear) {
+		int currentYear = 2018;
+		
+		return currentYear - baseYear;
+	}
+	public static int calculateAge(int baseYear, int currentYear) {		
+		return currentYear - baseYear;
+	}
+
+}

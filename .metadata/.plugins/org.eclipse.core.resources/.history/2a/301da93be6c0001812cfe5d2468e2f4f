@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		ArrayList<String> names = new ArrayList<>();
+		names.add("Gola");
+		names.add("Bola");
+		names.add("Dola");
+		
+		System.out.print(names);
+		
+		LinkedList<String> names2 = new LinkedList<>();
+		names2.add("Jambo");
+		names2.add("Mambo");
+		names2.add("Lambo");
+
+	}
+
+}

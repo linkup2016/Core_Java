@@ -1,0 +1,14 @@
+
+public class Coffee implements Priceable{
+	private boolean isDecafe;
+	private int sugar, creame;
+	private char size;
+	private int quantity;
+
+	@Override
+	public double calculatePrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

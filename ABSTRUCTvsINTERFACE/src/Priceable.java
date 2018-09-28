@@ -1,0 +1,12 @@
+
+public interface Priceable {
+	public final double SMALL_COFFEE = 1.99;
+	public final double SMALL_CAFELATE = 2.19;
+	public final double SMALL_FRAPPE = 3.49;
+	public final double SMALL_ICEDTEA = 0.99;
+	
+	public final double SALES_TAX = 1.075;
+	
+	
+	public double calculatePrice();
+}

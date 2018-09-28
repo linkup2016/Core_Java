@@ -1,0 +1,14 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		Map<String, Integer> ssn = new HashMap();
+		ssn.put("Mark", 31);
+		ssn.put("Moges", 37);
+		ssn.put("Stevens", 23);
+
+	}
+
+}

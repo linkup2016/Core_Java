@@ -1,0 +1,4 @@
+
+public abstract class Employee implements Printable{
+	public abstract void print();
+}

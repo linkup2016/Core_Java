@@ -1,0 +1,6 @@
+
+public interface Printable {
+	public void printName();
+	public void printPosition();
+	public double printSalary(double salary);
+}

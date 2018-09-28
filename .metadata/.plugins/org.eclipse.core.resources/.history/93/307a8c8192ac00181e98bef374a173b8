@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		String language;
+		boolean isRightInput = false;
+		
+		
+		Scanner input = new Scanner(System.in);
+				
+		System.out.println("Please Select your language ");
+		System.out.println("");		
+		language = input.nextLine().toLowerCase();
+		
+		while(isRightInput) {
+			switch(language) {
+			case "amharic": System.out.println("Enkuwan Dehna Metu !"); break;
+			case "english": System.out.println("Welcome! "); break;
+			case "oromifa": System.out.println("Began negan dufteni");break;
+			default: System.out.println("Sorry, We do not support your language at this time");
+			isRightInput = true;
+			}
+		}
+			
+		 
+		System.out.println("Sorry, You need to enter a language");
+		
+		/*switch(language) {
+		case "amharic": System.out.println("Enkuwan Dehna Metu !"); break;
+		case "english": System.out.println("Welcome! "); break;
+		case "oromifa": System.out.println("Began negan dufteni");break;
+		default: System.out.println("Sorry, We do support your language at this time");
+		}
+		*/
+		
+		
+
+	}
+
+}
