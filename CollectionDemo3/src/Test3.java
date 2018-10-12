@@ -20,14 +20,9 @@ public class Test3 {
 			nums.add(stop);
 		}
 		input.close();
-		Iterator<Integer> iterator = nums.iterator();
-
-		for (int i : nums) {
-			int highestFreq = Collections.frequency(nums, i);		
-			System.out.println(i + ": is the most frequent number" );	
-			
+		//Iterator<Integer> iterator = nums.iterator();
 		}
 
 	}
 
-}
+
